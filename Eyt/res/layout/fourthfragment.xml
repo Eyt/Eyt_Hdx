@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/lightyellow" >
+ <LinearLayout
+     	android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_search"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_normal_shape"
+            android:hint="请输入景点名称"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColorHint="#b3b3b3"
+            android:textSize="18sp" >
+        <requestFocus />
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/bt_search"
+            style="@style/Smile.TextView._White"
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_margin="10dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/btn_login_selector"
+            android:text="@string/search"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <com.eyt.search.KeywordsFlow
+        android:id="@+id/frameLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line1" >
+    </com.eyt.search.KeywordsFlow>
+
+</LinearLayout>

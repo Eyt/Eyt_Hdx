@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/ic_launcher" >
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@+id/common_actionbar">
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+   <ScrollView 
+       android:id="@+id/f_id"
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_marginTop="70dp">
+    <LinearLayout
+      android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+      android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edit_feed_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+          	android:background="@drawable/edit_bg_selector"
+            android:hint="@string/eyt_opinion_content"
+            android:inputType="textMultiLine" />
+"
+</LinearLayout>
+ </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/f_id"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login_selector"
+            android:text="@string/eyt_determine"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/submit_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login_selector"
+            android:text="@string/eyt_remove"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText_feedback_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/edit_bg_selector"
+        android:ems="10"
+        android:hint="@string/eyt_opinion"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

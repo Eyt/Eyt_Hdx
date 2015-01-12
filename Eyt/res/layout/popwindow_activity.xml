@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff393939"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/left_drawer_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="这是一条文字"
+            android:textColor="@color/darkgray"
+            android:textSize="18px" />
+    </LinearLayout>
+
+    <View style="@style/left_drawer_item_line" />
+
+    <RelativeLayout
+        style="@style/left_drawer_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/type1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/map1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/type1"
+            android:text="普通图"
+            android:textColor="@color/darkgray"
+            android:textSize="18px" />
+
+    </RelativeLayout>
+
+    <View style="@style/left_drawer_item_line" />
+
+    <RelativeLayout
+        style="@style/left_drawer_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/type2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/map2" />
+
+        <TextView
+            android:id="@+id/tv_tralate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/type2"
+            android:text="交通图"
+            android:textColor="@color/darkgray"
+            android:textSize="18px" />
+
+    </RelativeLayout>
+
+    <View style="@style/left_drawer_item_line" />
+
+    <RelativeLayout
+        style="@style/left_drawer_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/type3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/map3" />
+
+        <TextView
+            android:id="@+id/tv_tr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/type3"
+            android:text="卫星图"
+            android:textColor="@color/darkgray"
+            android:textSize="18px" />
+
+    </RelativeLayout>
+
+    <View style="@style/left_drawer_item_line" />
+
+    <!-- <RelativeLayout
+        android:id="@+id/menu_search"
+        android:layout_width="fill_parent"
+        style="@style/left_drawer_item_layout" >
+
+        <TextView
+            style="@style/left_drawer_item_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="82dp"
+            android:drawableLeft="@drawable/icon_gcoding"
+            android:text="添加足迹"
+            android:textSize="18px"
+            android:textColor="@color/darkgray" />
+
+    </RelativeLayout>
+
+    <View style="@style/left_drawer_item_line" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/favorite_btn"
+        style="@style/left_drawer_item_layout"
+        android:gravity="center|left" >
+        <com.eyt.mapprint.SwitchButton
+            android:id="@+id/switchButton"
+            style="@style/Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/switchText"
+            style="@style/left_drawer_item_text"
+            android:text="经纬度转地址" 
+            android:textSize="18px"/>
+
+    </LinearLayout>
+
+    <View style="@style/left_drawer_item_line" />
+
+    <RelativeLayout
+        
+        android:id="@+id/re_remove_print"
+        style="@style/left_drawer_item_layout" >
+
+        <TextView
+            style="@style/left_drawer_item_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="88dp"
+            android:drawableLeft="@drawable/map_search1"
+            android:text="清除标记"
+            android:textSize="18px" />
+
+    </RelativeLayout>
+    <View style="@style/left_drawer_item_line" />
+   
+
+</LinearLayout>

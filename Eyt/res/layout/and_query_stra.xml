@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp" >
+
+        <ImageView
+            android:id="@+id/imageView_querystra"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_margin="1dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/stra_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:ellipsize="end"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:text="@string/eyt_tite_content"
+                android:textSize="@dimen/base_action_bar_title_size" />
+            <TextView
+                android:id="@+id/strategy_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="@string/eyt_Strategy_time"
+                android:textSize="@dimen/tab_padding_top_bottom" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

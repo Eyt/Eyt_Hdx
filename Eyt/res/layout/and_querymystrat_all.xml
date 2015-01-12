@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mstra_all_stratitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/skyblue"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="stra_all_stratitle"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/mstrat_image"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+
+        <!--  <TextView
+            android:id="@+id/mstra_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="stra_time" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+            <ImageView
+                android:id="@+id/m_goodimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/goodb" />
+
+            <TextView
+                android:id="@+id/mstra_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="mstra_good" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mstra_all_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="stra_all_content" />
+    </LinearLayout>
+
+</RelativeLayout>

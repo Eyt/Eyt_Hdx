@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/stra_image"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:layout_height="100dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/mystrat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stra_image"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="17dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/base_action_bar_title_size" 
+        android:text="mystrat_title" />
+
+    <TextView
+        android:id="@+id/stra_udatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mystrat_title"
+        android:layout_below="@+id/mystrat_title"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/gray"
+        android:text="stra_udatetime" />
+
+    <TextView
+        android:id="@+id/stra_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stra_image"
+        android:layout_alignLeft="@+id/stra_udatetime"
+        android:visibility="invisible"
+        android:layout_below="@id/stra_udatetime"
+        android:text="stra_id" />
+
+    <ImageView
+        android:id="@+id/my_stra_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/stra_id"
+        android:layout_marginRight="4dp"
+        android:layout_below="@id/stra_udatetime"
+        android:src="@drawable/delete" />
+  
+</RelativeLayout>
